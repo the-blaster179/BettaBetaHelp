@@ -1,0 +1,23 @@
+name: BettaBetaHelp
+main: me.theblaster179.BettaBetaHelp.BettaBetaHelp
+description: A plugin to assist players in what they can do via commands such as /help and /fullhelp.
+
+commands:
+  help:
+    description: Lists a bunch of ingame common commands.
+  fullhelp:
+  	description: Lists all in game commands available to most players, even if they don't have permission
+  	
+permissions:
+  bettabetahelp.*:
+    description: Gives access to all BettaBetaHelp commands
+    children:
+      bettabetahelp.help: true
+      bettabetahelp.fullhelp: true
+  bettabetahelp.help:
+    description: Lists a bunch of ingame common commands.
+    default: true
+  bettabetahelp.fullhelp:
+    description: Lists all in game commands available to most players, even if they don't have permission
+    default: true
+version: 0.1
